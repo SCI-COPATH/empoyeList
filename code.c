@@ -20,19 +20,6 @@ void insertion(struct node **head){
     if(*head==NULL){
         *head=newNode;
     }
-    /*else if((*head)->rightLink==NULL){
-        if(newNode->empId<(*head)->empId){
-            newNode->rightLink=*head;
-            (*head)->leftLink=newNode;
-            *head=newNode;
-        }
-        else if(newNode->empId>(*head)->empId){
-            newNode->leftLink=*head;
-            (*head)->rightLink=newNode;
-        }
-        return ;
-    }
-    */
     else{
         while(ptr->rightLink!=NULL){
             if(newNode->empId<ptr->empId){
